@@ -1,0 +1,2 @@
+New-Item c:\Users\Adam\Documents\GitHub\Learn-Python-The-Hard-Way\my-pycairo-helloworld.py -type file -force -value "#This is the pycairo Hello World"
+New-Item c:\Users\Adam\Documents\GitHub\Learn-Python-The-Hard-Way\my-pygtk-helloworld.py -type file -force -value "#This is the pygtk Hello World"
