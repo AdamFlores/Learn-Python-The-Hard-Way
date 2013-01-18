@@ -1,0 +1,38 @@
+Asst Librarian
+Dean Teacher
+Doctoral Student
+Factory Boss
+Factory Owner
+Factory Union Leader
+Farm Boss
+Farm Owner
+Farm Worker Union Leader
+Graduate Student
+Head Librarian
+Judge
+Librarian
+Master Factory Worker
+Master Farm Worker
+Master Power Worker
+Media Mogul
+Power Owner
+Power Union Boss
+Prez
+Prez Candidate
+Principal
+Professor
+Senator
+Skilled Factory Worker
+Skilled Farm Worker
+Skilled Power Worker
+Store Assistant Manager
+Store Boss
+Store Clerk
+Store Manager
+Store Owner
+Store Union Boss
+Student
+Unskilled Factory Worker
+Unskilled Farm Worker
+Unskilled Power Worked
+Prez Candidate
