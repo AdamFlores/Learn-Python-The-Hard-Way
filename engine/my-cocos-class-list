@@ -1,0 +1,42 @@
+#Application
+import cocos
+#Abstract Classes/Objects
+class AbstractFactory(Object): #factory for all objects
+class AbstractProcessManager(Object): #process manaager for all objects
+class AbstractList(List): #abstract List for processing by Factories and Process Managers
+class AbstractObject(Object): #abstract object for Game Objects
+class AbstractObserver(Object): #handle all changing process managing into events
+#cocos interface[sic] 
+class CocosObserver(Object): #convert Observer to cocos events(one per external library)
+class CocosView(Object): #all cocos2d seperate from python logic
+class CocosModel(Object): #final stop for any conversion from native data structures
+class CocosController(Object): #only methods to update CocosModel, only takes orders from CocosObserver
+#View (Native Python 2.7)
+class Citizen(AbstractObject): #main scorekeeping mechanism of the game; dict
+class CitizenFactory(AbstractFactory): 
+class CitizenProcessManager(AbstractProcessManager):
+class Building(AbstractObject): #map influence, cultural significance; dict
+class BuildingFactory(AbstractFactory):
+class BuildingProcessManager(AbstractProcessManager):
+# to add: City, Map, Politics, Media, Corporation, Culture, Business 
+
+#View (Secondary)
+class Teacher(Job) #same as ancestor; dict
+class Prez(Job): #political influence, cultural significance; dict
+class Skyscraper(Building): #same as ancestor; dict   
+class Apartment(Building): #same as ancestor; dict
+class Job(Object): #political, cultural, consumer influence; dict
+
+#Logic (Primary)
+class Media(Object): #influencer, influenced by; directed weighted graph    
+class City(Object): #influencer, influenced by; directed weighted graph   
+class Population(Object): #influencer, influenced by; directed weighted graph   
+class Industry(Object): #influencer, influenced by; directed weighted graph       
+class Politics(Object): #influencer, influenced by; directed weighted graph   
+class Corporation(Object): #influencer, influenced by; directed weighted graph    
+class Culture(Object): #influencer, influenced by; directed weighted graph  
+#Logic (Secondary) 
+class News(Media): #influencer, influenced by
+class PetroCompany(Corporation): #influencer, influenced by
+
+    
