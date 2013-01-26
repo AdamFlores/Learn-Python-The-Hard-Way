@@ -24,6 +24,10 @@ if __name__ == "__main__":
     director.init( resizable=False )
     #main_scene = cocos.scene.Scene()
     main_scene = cocos.scene.Scene() #Bulk of "processing" not "events" will handle in Scene
+    intro_scene = cocos.scene.Scene()
+    attract_mode_scene = cocos.scene.Scene()
+    city_map_mode_scene = cocos.scene.Scene()
+    office_mode_scene = cocos.scene.Scene()
     #main_scene.transform_anchor = (320,240)
     #child1_scene = cocos.scene.Scene()
     #child1_scene.add( ColorLayer( 0,0,255,255 ) )
