@@ -1,13 +1,11 @@
 import cocos
 import unittest
 import mock
-#replace cocos Layer object with a mock
 
-class DirectorUnitTest03(unittest.TestCase):
+
+class DirectorUnitTest02(unittest.TestCase):
     def setup(self):
-       #     def mock_layer(mock):
-       #         return cocos.layer.Layer
-            class HelloWorld(mock):
+            class HelloWorld(cocos.layer.Layer):
                 def __init__(self):
                     super( HelloWorld, self ).__init__()
     def test_director_init(self):
