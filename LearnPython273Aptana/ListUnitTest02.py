@@ -1,20 +1,26 @@
 import unittest
+import mock
 
 class ListUnitTest02(unittest.TestCase):
 	
 	def setUp(self):
 		self.list_unit_test_01 = ["A", "B" , "C", "D"]
+		mock = Mock()
 
-	def test_print(self):
-		print self.list_unit_test_01
+#	def test_print(self):
+#		print self.list_unit_test_01
 		
 	def test_list_for(self):
 		for letter in self.list_unit_test_01:
 			print letter
 			
-	def test_list_if(self):
+	def test_list_if_pass(self):
 		if "A" in self.list_unit_test_01:
 			print "A is in List"
+	
+	def test_list_if_fail(self):
+		if "Z" in self.list_unit_test_01:
+			print "This test has failed"
 			
 	def test_list_slice(self):
 		begin = int(2)
