@@ -1,0 +1,1 @@
+sphinx-build -b html c:\Users\Adam\Documents\GitHub\Learn-Python-The-Hard-Way\source c:\Users\Adam\Documents\GitHub\Learn-Python-The-Hard-Way\build
