@@ -6,31 +6,28 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>640</width>
-    <height>480</height>
+    <width>1089</width>
+    <height>820</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTabWidget" name="CitizenList">
+   <widget class="QStackedWidget" name="CitizenList">
     <property name="geometry">
      <rect>
-      <x>0</x>
-      <y>0</y>
-      <width>631</width>
-      <height>431</height>
+      <x>20</x>
+      <y>10</y>
+      <width>1051</width>
+      <height>701</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
-    <widget class="QWidget" name="tab">
-     <attribute name="title">
-      <string>Tab 1</string>
-     </attribute>
-     <widget class="QComboBox" name="comboBox">
+    <widget class="QWidget" name="CitizenListPage1" native="true">
+     <widget class="QComboBox" name="firstNameOptions">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -39,8 +36,18 @@
         <height>22</height>
        </rect>
       </property>
+      <item>
+       <property name="text">
+        <string>FirstName01</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>FirstName02</string>
+       </property>
+      </item>
      </widget>
-     <widget class="QComboBox" name="comboBox_2">
+     <widget class="QComboBox" name="lastNameOptions">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -49,8 +56,18 @@
         <height>22</height>
        </rect>
       </property>
+      <item>
+       <property name="text">
+        <string>LastName01</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>LastName02</string>
+       </property>
+      </item>
      </widget>
-     <widget class="QComboBox" name="comboBox_3">
+     <widget class="QComboBox" name="jobOptions">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -59,48 +76,28 @@
         <height>22</height>
        </rect>
       </property>
-     </widget>
-     <widget class="QSpinBox" name="spinBox">
-      <property name="geometry">
-       <rect>
-        <x>540</x>
-        <y>40</y>
-        <width>42</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="spinBox_2">
-      <property name="geometry">
-       <rect>
-        <x>540</x>
-        <y>90</y>
-        <width>42</width>
-        <height>22</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QSpinBox" name="spinBox_3">
-      <property name="geometry">
-       <rect>
-        <x>540</x>
-        <y>140</y>
-        <width>42</width>
-        <height>22</height>
-       </rect>
-      </property>
+      <item>
+       <property name="text">
+        <string>Job01</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Job02</string>
+       </property>
+      </item>
      </widget>
      <widget class="QPushButton" name="pushButton">
       <property name="geometry">
        <rect>
         <x>220</x>
         <y>40</y>
-        <width>75</width>
+        <width>91</width>
         <height>23</height>
        </rect>
       </property>
       <property name="text">
-       <string>PushButton</string>
+       <string>New First Name</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_2">
@@ -108,12 +105,12 @@
        <rect>
         <x>220</x>
         <y>90</y>
-        <width>75</width>
+        <width>91</width>
         <height>23</height>
        </rect>
       </property>
       <property name="text">
-       <string>PushButton</string>
+       <string>New Last Name</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_3">
@@ -121,64 +118,99 @@
        <rect>
         <x>220</x>
         <y>140</y>
-        <width>75</width>
+        <width>91</width>
         <height>23</height>
        </rect>
       </property>
       <property name="text">
-       <string>PushButton</string>
+       <string>New Job</string>
       </property>
      </widget>
-     <widget class="QSlider" name="horizontalSlider">
-      <property name="geometry">
-       <rect>
-        <x>330</x>
-        <y>50</y>
-        <width>160</width>
-        <height>19</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-     <widget class="QSlider" name="horizontalSlider_2">
-      <property name="geometry">
-       <rect>
-        <x>330</x>
-        <y>100</y>
-        <width>160</width>
-        <height>19</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-     <widget class="QSlider" name="horizontalSlider_3">
-      <property name="geometry">
-       <rect>
-        <x>330</x>
-        <y>140</y>
-        <width>160</width>
-        <height>19</height>
-       </rect>
-      </property>
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="tab_2">
-     <attribute name="title">
-      <string>Tab 2</string>
-     </attribute>
-     <widget class="QTreeView" name="treeView">
+     <widget class="QComboBox" name="hobbyOptions">
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>20</y>
-        <width>256</width>
+        <y>190</y>
+        <width>181</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Hobby01</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Hooby02</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>190</y>
+        <width>91</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>New Hobby</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>240</y>
+        <width>91</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>New Personality</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>240</y>
+        <width>181</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Personality01</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Personality02</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>280</y>
+        <width>291</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Create New Citizen from Selections</string>
+      </property>
+     </widget>
+     <widget class="QListView" name="listView">
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>40</y>
+        <width>651</width>
         <height>192</height>
        </rect>
       </property>
@@ -186,40 +218,15 @@
      <widget class="QTableView" name="tableView">
       <property name="geometry">
        <rect>
-        <x>310</x>
-        <y>20</y>
-        <width>256</width>
+        <x>360</x>
+        <y>270</y>
+        <width>651</width>
         <height>192</height>
        </rect>
       </property>
      </widget>
-     <widget class="QScrollArea" name="scrollArea">
-      <property name="geometry">
-       <rect>
-        <x>299</x>
-        <y>9</y>
-        <width>281</width>
-        <height>221</height>
-       </rect>
-      </property>
-      <property name="widgetResizable">
-       <bool>true</bool>
-      </property>
-      <widget class="QWidget" name="scrollAreaWidgetContents">
-       <property name="geometry">
-        <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>279</width>
-         <height>219</height>
-        </rect>
-       </property>
-      </widget>
-     </widget>
-     <zorder>scrollArea</zorder>
-     <zorder>treeView</zorder>
-     <zorder>tableView</zorder>
     </widget>
+    <widget class="QWidget" name="CitizenListPage2" native="true"/>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -227,7 +234,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>640</width>
+     <width>1089</width>
      <height>21</height>
     </rect>
    </property>

@@ -1,0 +1,2 @@
+V=ImageSource("C:Users\Adam\Videos\tilt\prezday2\lighting2\render-final-1_Diffuse_lighting0060.bmp", end = 1500, fps = 24).ConvertToYV12()
+
