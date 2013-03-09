@@ -205,22 +205,12 @@
        <string>Create New Citizen from Selections</string>
       </property>
      </widget>
-     <widget class="QListView" name="listView">
+     <widget class="QListWidget" name="listWidget">
       <property name="geometry">
        <rect>
-        <x>360</x>
+        <x>350</x>
         <y>40</y>
-        <width>651</width>
-        <height>192</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QTableView" name="tableView">
-      <property name="geometry">
-       <rect>
-        <x>360</x>
-        <y>270</y>
-        <width>651</width>
+        <width>661</width>
         <height>192</height>
        </rect>
       </property>
